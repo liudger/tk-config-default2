@@ -39,11 +39,13 @@ settings.tk-maya.asset:
 # asset_step
 settings.tk-maya.asset_step:
   apps:
+    tk-maya-playblast: "@settings.tk-maya-playblast.asset_step"
     tk-multi-about:
       location: "@apps.tk-multi-about.location"
     tk-multi-breakdown:
       location: "@apps.tk-multi-breakdown.location"
     tk-multi-loader2: "@settings.tk-multi-loader2.maya"
+    tk-multi-publish: "@setting.tk-multi-publish.maya.asset_step"
     tk-multi-publish2: "@settings.tk-multi-publish2.maya.asset_step"
     tk-multi-screeningroom: "@settings.tk-multi-screeningroom.rv"
     tk-multi-shotgunpanel: "@settings.tk-multi-shotgunpanel.maya"
@@ -51,10 +53,12 @@ settings.tk-maya.asset_step:
     tk-multi-workfiles2: "@settings.tk-multi-workfiles2.maya.asset_step"
   menu_favourites:
   - {app_instance: tk-multi-workfiles2, name: File Open...}
+  - {app_instance: tk-multi-loader2, name: Load...}
   - {app_instance: tk-multi-snapshot, name: Snapshot...}
   - {app_instance: tk-multi-workfiles2, name: File Save...}
   - {app_instance: tk-multi-publish2, name: Publish...}
   template_project: asset_work_area_maya
+  # use_sgtk_as_menu_name: false
   location: "@engines.tk-maya.location"
 
 # project
@@ -96,13 +100,14 @@ settings.tk-maya.shot:
 # shot_step
 settings.tk-maya.shot_step:
   apps:
+    tk-maya-playblast: "@settings.tk-maya-playblast.shot_step"
     tk-multi-about:
       location: "@apps.tk-multi-about.location"
     tk-multi-breakdown:
       location: "@apps.tk-multi-breakdown.location"
-    tk-multi-setframerange:
-      location: "@apps.tk-multi-setframerange.location"
+    tk-multi-setframerange: "@apps.tk-multi-seframrange.maya.shot_step"
     tk-multi-loader2: "@settings.tk-multi-loader2.maya"
+    tk-multi-publish: "settings.tk-multi-publish.maya.shot_step"
     tk-multi-publish2: "@settings.tk-multi-publish2.maya.shot_step"
     tk-multi-screeningroom: "@settings.tk-multi-screeningroom.rv"
     tk-multi-shotgunpanel: "@settings.tk-multi-shotgunpanel.maya"
@@ -110,6 +115,8 @@ settings.tk-maya.shot_step:
     tk-multi-workfiles2: "@settings.tk-multi-workfiles2.maya.shot_step"
   menu_favourites:
   - {app_instance: tk-multi-workfiles2, name: File Open...}
+  - {app_instance: tk-multi-loader2, name: Load Assets...}
+  - {app_instance: tk-maya-breakdown, name: Scene Breakdown...}
   - {app_instance: tk-multi-snapshot, name: Snapshot...}
   - {app_instance: tk-multi-workfiles2, name: File Save...}
   - {app_instance: tk-multi-publish2, name: Publish...}

@@ -49,6 +49,12 @@ apps.tk-multi-loader2.location:
   name: tk-multi-loader2
   version: v1.19.3
 
+# publish legacy, needs to be removed when config is up to date
+apps.tk-multi-publish.location:
+  type: app_store
+  name: tk-multi-publish
+  version: v0.10.11
+
 # publish2
 apps.tk-multi-publish2.location:
   type: app_store

@@ -1,0 +1,45 @@
+# Copyright (c) 2017 Shotgun Software Inc.
+#
+# CONFIDENTIAL AND PROPRIETARY
+#
+# This work is provided "AS IS" and subject to the Shotgun Pipeline Toolkit
+# Source Code License included in this distribution package. See LICENSE.
+# By accessing, using, copying or modifying this work you indicate your
+# agreement to the Shotgun Pipeline Toolkit Source Code License. All rights
+# not expressly granted therein are reserved by Shotgun Software Inc.
+
+################################################################################
+
+includes:
+- ../app_locations.yml
+
+################################################################################
+
+
+settings.tk-maya-playblast.asset_step:
+  hook_post_playblast: default
+  hook_setup_window: default
+  template_sequence: maya_asset_sequence_playblast
+  template_shot: maya_asset_playblast
+  template_work: maya_asset_work
+  location: {
+    linux_path: /Volumes/Server03_G/tank/install/apps/storm/tk-maya-playblast/v0.1.0,
+    mac_path: /Volumes/Server03_G/tank/install/apps/storm/tk-maya-playblast/v0.1.0,
+    type: dev, 
+    windows_path: \\Server03\Server03_G\tank\install\apps\storm\tk-maya-playblast\v0.1.0
+    }
+    # location should be in the location file
+
+settings.tk-maya-playblast.shot_step:
+  hook_post_playblast: default
+  hook_setup_window: default
+  template_sequence: maya_shot_sequence_playblast
+  template_shot: maya_shot_playblast
+  template_work: maya_shot_work
+  location: {
+    linux_path: /Volumes/Server03_G/tank/install/apps/storm/tk-maya-playblast/v0.1.0,
+    mac_path: /Volumes/Server03_G/tank/install/apps/storm/tk-maya-playblast/v0.1.0,
+    type: dev, 
+    windows_path: \\Server03\Server03_G\tank\install\apps\storm\tk-maya-playblast\v0.1.0
+    }
+    # location should be in the location file

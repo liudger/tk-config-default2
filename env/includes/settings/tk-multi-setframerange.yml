@@ -15,10 +15,8 @@ includes:
 
 ################################################################################
 
-settings.tk-multi-breakdown.nukestudio:
-  hook_scene_operations: '{self}/tk-nuke_scene_operations.py'
-  location: "@apps.tk-multi-breakdown.location"
-
-settings.tk-multi-breakdown.maya:
-  hook_scene_operations: maya_scene_breakdown
-  location: "@apps.tk-multi-breakdown.location"
+# maya
+settings.tk-multi-setframerange.shot_step:
+  sg_in_frame_field: sg_cut_in
+  sg_out_frame_field: sg_cut_out
+  location: "@apps.tk-multi-setframerange.location"
